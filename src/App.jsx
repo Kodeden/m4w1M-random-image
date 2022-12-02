@@ -8,8 +8,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    setSearchTerms(event.target.search.value);
+    setSearchTerms(event.target.elements.search.value);
   };
 
   return (
