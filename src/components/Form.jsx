@@ -1,0 +1,28 @@
+import PropTypes from "prop-types";
+
+export default function Form({ handleSubmit }) {
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="mb-8 flex flex-col items-center gap-y-4"
+    >
+      <label htmlFor="search">
+        Search (separate terms with commas - no spaces)
+      </label>
+      <input
+        type="search"
+        id="search"
+        className="rounded-sm border px-1"
+        placeholder="🔍"
+      />
+      <button
+        type="submit"
+        className="rounded-full bg-green-500 p-4 text-white"
+      >
+        Go!
+      </button>
+    </form>
+  );
+}
+
+Form.propTypes = { handleSubmit: PropTypes.func.isRequired };
