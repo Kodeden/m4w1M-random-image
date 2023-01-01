@@ -24,7 +24,6 @@ function App() {
           Go!
         </button>
       </form>
-      )
     </main>
   </>;
 }
